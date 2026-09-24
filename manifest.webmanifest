@@ -1,0 +1,16 @@
+{
+  "name": "Wspólna kuchnia",
+  "short_name": "Kuchnia",
+  "description": "Przepisy, plan tygodnia i wspólna lista zakupów.",
+  "lang": "pl",
+  "start_url": "./#/losuj",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F1F4EF",
+  "theme_color": "#FFD23F",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

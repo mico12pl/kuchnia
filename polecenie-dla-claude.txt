@@ -1,0 +1,33 @@
+Spisz przepis z podanej strony jako JSON w dokładnie takim formacie:
+
+{
+  "wersja": 1,
+  "tytul": "...",
+  "tagi": ["..."],
+  "czas_min": 0,
+  "porcje": 0,
+  "zrodlo": "<link do strony>",
+  "skladniki": [
+    { "ilosc": 0, "jednostka": "...", "nazwa": "..." }
+  ],
+  "kroki": ["..."],
+  "notatki": ""
+}
+
+Zasady:
+- Nazwy składników w mianowniku liczby pojedynczej ("pomidor", "żółtko").
+- Usuń przymiotniki opisujące stan lub przygotowanie ("dojrzały",
+  "świeży", "drobno posiekany", "krojony").
+- Zostaw przymiotniki określające, jaki to produkt ("płatki owsiane",
+  "mleko kokosowe", "chleb żytni").
+- Słowa występujące tylko w liczbie mnogiej zostaw w tej formie
+  ("płatki", "drożdże").
+- Jednostki tylko z listy: g, kg, ml, l, szt, łyżka, łyżeczka, szklanka,
+  szczypta, opak. Przelicz inne jednostki na te z listy.
+- Jeśli ilość jest "do smaku", podaj sam obiekt z nazwą,
+  np. { "nazwa": "pieprz" }.
+- czas_min to łączny czas przygotowania w minutach, jako liczba.
+- Tagi małymi literami, 1–3 sztuki, np. śniadanie, obiad, kolacja,
+  zupa, makaron, ciasto, deser.
+- Kroki krótkie, jedno działanie na krok.
+- Zwróć wyłącznie JSON, bez komentarzy i bez bloku kodu.
